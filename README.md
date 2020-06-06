@@ -4,13 +4,9 @@ IT Is The Code Of My Tutorial Channel - 'Aryan Apte'. In It It Teach You How To 
 import cv2
 import os
 
-
-# Cascades
 face_cascade = cv2.CascadeClassifier(os.path.expanduser('~/Desktop/Chatbot5/haarcascade_frontalface_default.xml'))
 eye_cascade = cv2.CascadeClassifier(os.path.expanduser('~/Desktop/Chatbot5/haarcascade_eye_tree_eyeglasses.xml'))
 
-
-# Video Capture
 cap = cv2.VideoCapture(0)
 while True:
     ret, img = cap.read()
